@@ -14,16 +14,21 @@ public class Array {
             int[] newItems = new int[count*2];
 
             //copy all the existing items
-            for(int i = 0; i < count; i++){
+            for(int i = 0; i < count; i++)
                 newItems[i] = items[i];
 
                 //set "items" to this new array
                 items = newItems;
-            }
         }
 
         //add the new item at the end
         items[count++] = item;
+    }
+
+    public void removeAt(int index){
+        //Validate the index
+        if(index<0 || index>=count)
+        //Shift the items to the left to fill the holes
     }
 
     public void print(){
