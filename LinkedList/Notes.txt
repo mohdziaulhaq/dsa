@@ -1,0 +1,21 @@
+LINKEDLIST
+----------
+Node
+  Value
+  Address
+
+Head ...... Tail
+
+LOOKUP
+ By Value O(n)
+ By Index O(n)
+
+INSERT
+ At the End       O(1)
+ At the beginning O(1)
+ In the Middle    O(n)
+
+DELETE
+ From the Beginning O(1)
+ From the End       O(n)
+ From the Middle    O(n)
