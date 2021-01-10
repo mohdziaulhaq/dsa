@@ -40,6 +40,14 @@ public class Array {
         count--;
     }
 
+    public int indexOf(int item){
+        //if we find it, return index
+        for(int i = 0; i < count; i++)
+            if(item == items[i])
+            return i;
+        //otherwise return -1
+        return -1;
+    }
     public void print(){
         for(int i = 0; i < count; i++){
             System.out.println(items[i]);

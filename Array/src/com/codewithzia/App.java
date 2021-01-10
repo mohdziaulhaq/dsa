@@ -7,8 +7,8 @@ public class App {
          numbers.insert(20);
          numbers.insert(30);
          numbers.insert(40);
-         numbers.removeAt(3);
-        // numbers.indexOf(100);
+        //  numbers.removeAt(3);
+         System.out.println("Element present at index "+numbers.indexOf(400)); 
         numbers.print();
     }
 }
