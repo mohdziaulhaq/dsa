@@ -22,9 +22,19 @@ import java.util.LinkedList;
 public class App{
     public static void main(String[] args) {
         var list = new com.codewithzia.LinkedList();
+        System.out.println(list.size());
         list.addLast(10);
+        System.out.println(list.size());
         list.addLast(20);
         list.addLast(30);
-        list.addFirst(90);
+        System.out.println(list.size());
+        // list.addFirst(90);
+        // System.out.println(list.indexOf(0));
+        // System.out.println(list.contains(20));
+        // System.out.println(list.contains(50));
+        // list.removeFirst();
+        list.removeLast();
+        System.out.println(list.size());
+
     }
 }
