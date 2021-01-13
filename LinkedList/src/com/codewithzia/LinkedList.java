@@ -100,6 +100,41 @@ public class LinkedList {
         return size;
     }
 
+    public int[] toArray(){
+        int[] array = new int[size];
+        var current = first;
+        var index =0;
+        while(current != null){
+            array[index++] = current.value;
+            current = current.next;
+        }
+        return array;
+    }
+
+    public void reverse(){
+        if(isEmpty()) return;
+        // f            l
+        //[10 -> 20 -> 30]
+        //              p     c     n
+        // n = c.next;
+        // c.next = p;
+        //[10 <- 20 <- 30]
+        
+        var previous = first;
+        var current = first.next;
+
+        while(current != null){
+            var next = current.next;
+            current.next = previous;
+            previous = current;
+            current = next;    
+        }
+        last = first;//to get last pointer
+        last.next = null;//last should only point to null
+        first = previous;
+
+    }
+
     private boolean isEmpty(){
         return first == null;
     }
