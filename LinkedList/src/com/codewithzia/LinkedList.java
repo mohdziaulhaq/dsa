@@ -115,7 +115,9 @@ public class LinkedList {
         if(isEmpty()) return;
         // f            l
         //[10 -> 20 -> 30]
-        //              p     c     n
+        // p     c     n
+        //       p     c     n
+        //             p     c     n
         // n = c.next;
         // c.next = p;
         //[10 <- 20 <- 30]

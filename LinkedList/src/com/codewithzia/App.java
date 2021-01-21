@@ -1,7 +1,6 @@
 package com.codewithzia;
 
 import java.util.Arrays;
-import java.util.LinkedList;
 
 // public class App {
 //     public static void main(String[] args) {
@@ -22,11 +21,10 @@ import java.util.LinkedList;
 public class App{
     public static void main(String[] args) {
         var list = new com.codewithzia.LinkedList();
-        // list.addLast(10);
-        // list.addLast(20);
-        // list.addLast(30);
-        // list.addLast(40);
-        // list.addFirst(90);
+        list.addLast(10);
+        list.addLast(20);
+        list.addLast(30);
+        list.addLast(40);
         // System.out.println(list.indexOf(0));
         // System.out.println(list.contains(20));
         // System.out.println(list.contains(50));
